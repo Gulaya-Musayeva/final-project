@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
-}
+:root{
+  --primaru-white:#fff;
+  --primary-light-gray:#f4f4f4;
+  --primary-gray:#ccd1d9;
+  --primary-dark-gray:#666;
+  --primary-orange:#f9ab00;
+  --primary-dark:rgb(52,58,64);
+  --primary-red:#ef4035;
+  --primary-hover-red:#f33501;
+  --primary-black:#000;
+  --primary-transparent-black:rgba(0,0,0,0.7);
+  --primary-green:rgb(0,225,0);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+/* nav{
+  overflow: hidden;
+  margin:0 .5rem;
+} */
+
+
+.logo{
+  width: 14rem;
+}
+nav a.nav-link{
+  font-size: 1.2rem;
+  letter-spacing: 0.0375rem;
+  margin: 0 0.75rem;
+  color: var(--rimary-white) !important;
+
+}
+nav ul li{
+  text-transform: uppercase;
+}
+.navbar-nav>li>a.active,
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus{
+  border-bottom: 0.1875rem solid var(--primary-orange);
+}
+/* header ucun css kodlari */
+.header-wrapper{
+  position: relative;
+  background: url(laptop1.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+.main-info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+}
+.typed-text{
+  font-size: 1.5rem;
+  
+}
+.main-info h1{
+  
+  color: var(--primary-orange);
+  margin-bottom: 25px;
+  background-color:rgba(235, 228, 214, 0.842) ;
+  border-radius: .1in;
 }
 
-.App-link {
-  color: #61dafb;
+@media(max-width:768px){
+  .main-info h1{
+    font-size: 1.7rem;
+  }
+}
+.downloadcv{
+  border: 1px solid var(--primary-orange);
+  padding: 0.625rem;
+  margin: 3rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: var(--primaru-black);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.downloadcv:hover{
+  text-decoration: none;
+  background-color:var(--primary-orange) ;
+  color: var(--primaru-white);
+  transition: .4s ease-in-out;
 }
