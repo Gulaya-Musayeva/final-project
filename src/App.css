@@ -90,3 +90,35 @@ nav ul li{
   color: var(--primaru-white);
   transition: .4s ease-in-out;
 }
+
+/* AboutMe ucun stiller */
+
+.photo-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.profile-img{
+  width:16rem ;
+  height: 16rem;
+  border-radius: 50%;
+  border: 5px solid var(--primary-orange);
+  padding: .3rem;
+  object-fit: cover;
+}
+
+.about-heading{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+@media(max-width:768px){
+  .about-heading{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.p-text{
+  text-align: justify;
+}

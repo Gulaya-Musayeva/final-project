@@ -6,7 +6,7 @@ const header=() =>{
   return (
     <div className="header-wrapper">
         <div className="main-info">
-            <h1>Web development and website services</h1>
+            <h1>Web Development and Website Services</h1>
             <Typed className='typed-text'
             strings={[
                 'Microsoft Azure Developing Associate',
